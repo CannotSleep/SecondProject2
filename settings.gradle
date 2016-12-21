@@ -1,0 +1,1 @@
+include ':app', ':servicetest', ':animtest', ':testroundmenu', ':testhandler', ':testurl'

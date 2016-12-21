@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context="com.zyt.happy.animtest.MainActivity"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"/>
+
+    <ImageView
+        android:src="@drawable/wancana"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="testAnim"
+        />
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="342dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="0.55">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:text="垂直"
+            android:onClick="viewDown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:text="抛物线"
+            android:onClick="viewFly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+<ImageView
+    android:id="@+id/ball"
+    android:src="@drawable/wancana"
+    android:layout_width="50dp"
+    android:layout_height="50dp"/>
+</LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:layout_weight="0.26">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:onClick="together"
+                android:text="Together"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:onClick="order"
+                android:text="order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/ball_two"
+            android:src="@drawable/wancana"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
